@@ -1,7 +1,8 @@
+![](image/monarch.png)
 # Senior Design - Unified Butterfly Recorder
 ## Team - may1708
 ## [![Build Status](https://travis-ci.com/gtharris/ubr-may1708.svg?token=pCarmKjxsHU9EuwtcrZV&branch=master)](https://travis-ci.com/gtharris/ubr-may1708)
-![Butterfly Logo](/images/monarch.png)
+
 ## Project Description
 Butterflies populations are often utilized as indicator species; from monitoring climate change to determining the quality of habitat restoration, butterfly numbers are used frequently to help answer scientific questions. However, across the nation and world, there is a lack of information on native butterfly species, their annual dispersal, and numbers. To fill this gap in information, the scientific community has begun relying on citizen scientists - volunteers of various backgrounds - to go out into the field and perform butterfly surveys. In January 2013, Team Butterfly, Senior Design Team 13-08, set out to create the Unified Butterfly Recorder (UBR) app for the Android platform. Throughout 2013, with the collaboration of the Reiman Gardens Entomology staff, UBR was designed, programmed, and released in beta on the Google Play store to be tested by the community. This app has the potential to significantly and positives alter the course of global conservation research. It is being tested currently by researchers in the United States, Canada, Germany, the Netherlands, and other countries around the world. In July 2016, Senior Design Team 16-14 followed up with an iOS version of UBR that was developed using feedback from the community, these two versions allowed UBR to be used on a large share of mobile devices. The Reiman Gardens Entomology staff, along with utilizing UBR in their conservation work, frequently presents these apps and studies performed on their usability at various conferences in the entomology and conservation fields.
 
