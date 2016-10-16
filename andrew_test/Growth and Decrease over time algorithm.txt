@@ -1,0 +1,6 @@
+Choose a granularity g (1mile, 500 meeters, etc.)
+In theory the map is now divided into gxg size boxes. To get the box key use the formula key=lat/g,lng/g (modifying g to be in units of lat/lng)
+Gradients don't seem to be a good option. Instead we're going to have to use colored polygons to color each area.
+For each survey, calculate how much time they spent in each area. Get average sigtings/unit of time for two different time frames.
+If the later time frame has a higher sighting rate, color orange/red. Use green/blue for a decrease. Use black if not enough data exists (EG, box key was only created for one of the two timeframes). Use yellow if stayed the same.
+Keep track of highest and lowest values so that a legend can be generated. 
