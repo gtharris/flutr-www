@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Heatmaps</title>
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        height: 100%;
+      }
+      #floating-panel {
+        position: absolute;
+        top: 10px;
+        left: 25%;
+        z-index: 5;
+        background-color: #fff;
+        padding: 5px;
+        border: 1px solid #999;
+        text-align: center;
+        font-family: 'Roboto','sans-serif';
+        line-height: 30px;
+        padding-left: 10px;
+      }
+      #floating-panel {
+        background-color: #fff;
+        border: 1px solid #999;
+        left: 25%;
+        padding: 5px;
+        position: absolute;
+        top: 10px;
+        z-index: 5;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="floating-panel">
+      <button onclick="toggleHeatmap()">Toggle Heatmap</button>
+      <button onclick="changeGradient()">Change gradient</button>
+      <button onclick="changeRadius()">Change radius</button>
+      <button onclick="changeOpacity()">Change opacity</button>
+	  <button onclick="loadPopDemo('Monarch')">Load population demo for Monarch</button>
+	  <button onclick="loadPopDemo('Swallowtail')">Load population demo for Swallowtail</button>
+	  
+	  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.0/themes/base/jquery-ui.css">
+	  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+      <script>
+        $( function() {
+        $( "#datepickerStart" ).datepicker();
+		 $( "#datepickerEnd" ).datepicker();
+      } );
+      </script>
+	  <p>Start: <input type="text" id="datepickerStart" background-color=black></p>
+	  <p>End: <input type="text" id="datepickerEnd" background-color=black></p>
+    </div>
+    <div id="map"></div>
+    <script>
+	var map, heatmap, markers;
+    //var pointArray = [new google.maps.LatLng(42.011439, -93.638185)];
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 50,
+          center: {lat: 42.011439, lng: -93.638185},
+          mapTypeId: 'satellite'
+        });
+
+        heatmap = new google.maps.visualization.HeatmapLayer({
+          data: [],
+          map: map
+        });
+		
+		markers = [];
+      }
+
+      function toggleHeatmap() {
+        heatmap.setMap(heatmap.getMap() ? null : map);
+      }
+	  
+
+      function changeGradient() {
+        var gradient = [
+		  'rgba(0, 0, 0, 0)',
+          'rgba(0, 255, 255, 1)'
+        ]
+		heatmap.set('dissipate', true);
+        heatmap.set('gradient', heatmap.get('gradient') ? null : gradient);
+      }
+
+      function changeRadius() {
+        heatmap.set('radius', heatmap.get('radius') ? null : 20);
+      }
+
+      function changeOpacity() {
+        heatmap.set('opacity', heatmap.get('opacity') ? null : 0.2);
+      }
+	  
+	  function loadPopDemo(type) {
+	    for(var i = 0;i < markers.length; i++)
+	    {
+		  markers[i].setMap(null);
+	    }
+		markers = [];
+		heatmap.setMap(null);
+	  	heatmap = new google.maps.visualization.HeatmapLayer({
+          data: [],
+          map: map
+        });
+		var start;
+		var end;
+		if(document.getElementById("datepickerStart").value == '')
+		{
+		  start = new Date(0, 0, 0, 0, 0, 0, 0)
+		}
+		else
+		{
+		  start = generateDateFromString(document.getElementById('datepickerStart').value);
+		}
+		if(document.getElementById("datepickerEnd").value == '')
+		{
+		  end = new Date(9999, 0, 0, 0, 0, 0, 0)
+		}
+		else
+		{
+		  end = generateDateFromString(document.getElementById('datepickerEnd').value);
+		}
+		alert("Showing points where " + type + "s were spotted between " + start + " and " + end + ".");
+		var allData = getData();
+		var i;
+		for (i = 0; i < allData.length; i++) {
+			if(allData[i][0].localeCompare(type) == 0)
+			{
+				var pointDate = generateDateFromString(allData[i][3]);
+				if(pointDate <= end && pointDate >= start)
+				{
+				  heatmap.data.push(new google.maps.LatLng(allData[i][1], allData[i][2]));
+				  
+				  var marker = new google.maps.Marker({
+                    position: {lat: allData[i][1], lng: allData[i][2]},
+                    map: map,
+                    title: allData[i][0]
+                  });
+				  markers.push(marker);
+				}
+			}
+        }
+     }
+	 
+	 function getData(){
+	    return[
+            ["Monarch",42.011439,-93.638185, '6/15/2016'],
+            ["Monarch",42.011429,-93.637185, '6/14/2016'],
+            ["Monarch",42.011369,-93.637485, '6/13/2016'],
+            ["Monarch",42.011329,-93.637385, '6/12/2016'],
+            ["Monarch",42.011349,-93.638385, '6/11/2016'],
+            ["Monarch",42.011339,-93.637185, '6/10/2016'],
+            ["Swallowtail",42.011409,-93.638385, '6/15/2016'],
+            ["Swallowtail",42.011539,-93.638185, '6/14/2016'],
+            ["Monarch",42.011339,-93.637285, '6/9/2016'],
+            ["Monarch",42.011309,-93.638185, '6/8/2016'],
+            ["Monarch",42.0114339,-93.638185, '6/7/2016'],
+            ["Monarch",42.011439,-93.638185, '6/6/2016'],
+            ["Swallowtail",42.011539,-93.638285, '6/13/2016'],
+            ["Swallowtail",42.011529,-93.637385, '6/12/2016'],
+            ["Swallowtail",42.011469,-93.637285, '6/11/2016'],
+            ["Swallowtail",42.011429,-93.637485, '6/10/2016'],
+            ["Swallowtail",42.011449,-93.638385, '6/9/2016'],
+            ["Swallowtail",42.011439,-93.637285, '6/8/2016'],
+            ["Swallowtail",42.011439,-93.637285, '6/7/2016'],
+            ["Swallowtail",42.011539,-93.638185, '6/6/2016'],
+        ];
+	 }
+	  
+	  function loadComparisonDemo() {
+	    
+	  }
+	  
+	  function generateDateFromString(dateString)
+	  {
+	    var vals = dateString.split("/");
+		if(vals.length != 3)
+		{
+		  alert("Can't handle this number of values." + dateString);
+		}
+	    return new Date(vals[2], vals[0], vals[1], 0, 0, 0, 0);
+	  }
+	</script>
+    <script async defer
+        src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCFCUvk298LyMesZK5P7dijbxDzavtJcf8&libraries=visualization&callback=initMap">
+    </script>
+  </body>
+</html>
