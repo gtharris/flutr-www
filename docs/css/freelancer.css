@@ -158,6 +158,20 @@ header .intro-text .skills {
   color: white;
   border-color: #18BC9C;
 }
+  .mobile {
+    display: block;
+  }
+
+  .desktop {
+    display: none;
+  }
+  #menu .contactButton {
+  bottom: 30px;
+  right: 100px;
+  position: absolute;
+  text-align: right;
+  cursor: pointer;
+}
 @media (min-width: 768px) {
   .navbar-custom {
     padding: 25px 0;
