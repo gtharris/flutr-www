@@ -30,7 +30,10 @@
     <![endif]-->
 <style type="text/css">
 @media screen and (min-width: 961px) {
-   div#mydiv { display: none }
+   div#mydivsmall { display: none }
+}
+@media screen and (max-width: 961px) {
+   div#mydivlarge { display: none }
 }
 </style>
 
@@ -42,13 +45,20 @@
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
-            <div id = "mydiv" class="navbar-header page-scroll mydiv">
+            <div id = "mydivlarge" class="navbar-header page-scroll mydiv">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
 
                 <a class="navbar-brand" href="#page-top">Unified Butterfly Recorder</a>
             </div>
+            <div id = "mydivsmall" class="navbar-header page-scroll mydiv">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+
+                <a class="navbar-brand" href="#page-top">UBR</a>
+            </div>            
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
