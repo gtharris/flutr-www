@@ -58,11 +58,11 @@ hr.leaf-light:after {
   color: white;
 }
 hr.leaf-primary {
-  border-color: #81A684;
+  border-color: #6B717E;
 }
 hr.leaf-primary:after {
   background-color: white;
-  color: #81A684;
+  color: #6B717E;
 }
 .img-centered {
   margin: 0 auto;
@@ -104,7 +104,7 @@ header .intro-text .skills {
   }
 }
 .navbar-custom {
-  background: #81A684;
+  background: #6B717E;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
@@ -303,7 +303,7 @@ footer h3 {
 }
 footer .footer-above {
   padding-top: 50px;
-  background-color: #81A684;
+  background-color: #6B717E;
 }
 footer .footer-col {
   margin-bottom: 50px;
@@ -346,8 +346,8 @@ footer .footer-below {
 }
 .btn-primary {
   color: white;
-  background-color: #81A684;
-  border-color: #81A684;
+  background-color: #6B717E;
+  border-color: #6B717E;
   font-weight: 700;
 }
 .btn-primary:hover,
@@ -379,11 +379,11 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-  background-color: #81A684;
-  border-color: #81A684;
+  background-color: #6B717E;
+  border-color: #6B717E;
 }
 .btn-primary .badge {
-  color: #81A684;
+  color: #6B717E;
   background-color: white;
 }
 .btn-success {
@@ -497,7 +497,7 @@ fieldset[disabled] .btn-success.active {
   height: 75px;
   width: 1px;
   margin-left: 35px;
-  background-color: #81A684;
+  background-color: #6B717E;
   transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   /* IE 9 */
@@ -508,7 +508,7 @@ fieldset[disabled] .btn-success.active {
 .portfolio-modal .close-modal .lr .rl {
   height: 75px;
   width: 1px;
-  background-color: #81A684;
+  background-color: #6B717E;
   transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   /* IE 9 */
