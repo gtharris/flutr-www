@@ -31,8 +31,8 @@ h6 {
   text-transform: uppercase;
   font-weight: 700;
 }
-hr.star-light,
-hr.star-primary {
+hr.leaf-light,
+hr.leaf-primary {
   padding: 0;
   border: none;
   border-top: solid 5px;
@@ -40,9 +40,9 @@ hr.star-primary {
   max-width: 250px;
   margin: 25px auto 30px;
 }
-hr.star-light:after,
-hr.star-primary:after {
-  content: "\f005";
+hr.leaf-light:after,
+hr.leaf-primary:after {
+  content: "\f06c";
   font-family: FontAwesome;
   display: inline-block;
   position: relative;
@@ -50,17 +50,17 @@ hr.star-primary:after {
   font-size: 2em;
   padding: 0 0.25em;
 }
-hr.star-light {
+hr.leaf-light {
   border-color: white;
 }
-hr.star-light:after {
+hr.leaf-light:after {
   background-color: #18BC9C;
   color: white;
 }
-hr.star-primary {
+hr.leaf-primary {
   border-color: #2C3E50;
 }
-hr.star-primary:after {
+hr.leaf-primary:after {
   background-color: white;
   color: #2C3E50;
 }
