@@ -27,12 +27,8 @@ a:hover,
 a:focus,
 a:active,
 a.active {
-<<<<<<< .merge_file_yYNBmr
    /*Only Used in footer*/
   color: #6B717E;
-=======
-  color: #D4ADCF;
->>>>>>> .merge_file_zxGVgC
   outline: none;
 }
 h1,
@@ -68,14 +64,9 @@ hr.leaf-light {
   border-color: white;
 }
 hr.leaf-light:after {
-<<<<<<< .merge_file_yYNBmr
   /*Same as header*/
   background-color: #A0D4E5;
   color: #81A684;
-=======
-  background-color: #D4ADCF;
-  color: white;
->>>>>>> .merge_file_zxGVgC
 }
 hr.leaf-primary {
   /* Line Leaf Color */
@@ -83,12 +74,8 @@ hr.leaf-primary {
 }
 hr.leaf-primary:after {
   background-color: white;
-<<<<<<< .merge_file_yYNBmr
   /* Leaf Color */
   color: #81A684;
-=======
-  color: #6B717E;
->>>>>>> .merge_file_zxGVgC
 }
 .img-centered {
   margin: 0 auto;
@@ -96,11 +83,7 @@ hr.leaf-primary:after {
 header {
   /*Sky*/
   text-align: center;
-<<<<<<< .merge_file_yYNBmr
   background: #A0D4E5;
-=======
-  background: #D4ADCF;
->>>>>>> .merge_file_zxGVgC
   color: white;
 }
 header .container {
@@ -162,15 +145,10 @@ header .intro-text .skills {
   color: white;
 }
 .navbar-custom .navbar-nav li a:hover {
-<<<<<<< .merge_file_yYNBmr
   /*Sun*/
   color: white;
   outline:#FE5F55 ;
   background: #EDE580;
-=======
-  color: #D4ADCF;
-  outline: none;
->>>>>>> .merge_file_zxGVgC
 }
 .navbar-custom .navbar-nav li a:focus,
 .navbar-custom .navbar-nav li a:active {
@@ -179,22 +157,14 @@ header .intro-text .skills {
 .navbar-custom .navbar-nav li.active a {
   /*Sun*/
   color: white;
-<<<<<<< .merge_file_yYNBmr
   outline:#FE5F55 ;
   background: #EDE580;
-=======
-  background: #D4ADCF;
->>>>>>> .merge_file_zxGVgC
 }
 .navbar-custom .navbar-nav li.active a:hover,
 .navbar-custom .navbar-nav li.active a:focus,
 .navbar-custom .navbar-nav li.active a:active {
   color: white;
-<<<<<<< .merge_file_yYNBmr
   background: #EDE580;
-=======
-  background: #D4ADCF;
->>>>>>> .merge_file_zxGVgC
 }
 .navbar-custom .navbar-toggle {
   color: white;
@@ -204,15 +174,9 @@ header .intro-text .skills {
 }
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
-<<<<<<< .merge_file_yYNBmr
   background-color: #EDE580;
   color: white;
   border-color: #EDE580;
-=======
-  background-color: #D4ADCF;
-  color: white;
-  border-color: #D4ADCF;
->>>>>>> .merge_file_zxGVgC
 }
 
 @media (min-width: 768px) {
@@ -243,11 +207,7 @@ section h2 {
   font-size: 3em;
 }
 section.success {
-<<<<<<< .merge_file_yYNBmr
   background: #A0D4E5;
-=======
-  background: #D4ADCF;
->>>>>>> .merge_file_zxGVgC
   color: white;
 }
 @media (max-width: 767px) {
@@ -364,22 +324,14 @@ footer h3 {
 }
 footer .footer-above {
   padding-top: 50px;
-<<<<<<< .merge_file_yYNBmr
   background-color: #81A684;
-=======
-  background-color: #6B717E;
->>>>>>> .merge_file_zxGVgC
 }
 footer .footer-col {
   margin-bottom: 50px;
 }
 footer .footer-below {
   padding: 25px 0;
-<<<<<<< .merge_file_yYNBmr
   background-color: #6B717E;
-=======
-  background-color: #04724D;
->>>>>>> .merge_file_zxGVgC
 }
 .btn-outline {
   color: white;
@@ -393,27 +345,17 @@ footer .footer-below {
 .btn-outline:focus,
 .btn-outline:active,
 .btn-outline.active {
-<<<<<<< .merge_file_yYNBmr
 
  /*Should be black
   */
   color: #6B717E;
-=======
-  color: #D4ADCF;
->>>>>>> .merge_file_zxGVgC
   background: white;
   border: solid 2px white;
 }
 .btn-outline-blk {
-<<<<<<< .merge_file_yYNBmr
   color: #6B717E;
   font-size: 20px;
   border: solid 2px #6B717E;
-=======
-  color: black;
-  font-size: 20px;
-  border: solid 2px black;
->>>>>>> .merge_file_zxGVgC
   background: transparent;
   transition: all 0.3s ease-in-out;
   margin-top: 15px;
@@ -422,7 +364,6 @@ footer .footer-below {
 .btn-outline-blk:focus,
 .btn-outline-blk:active,
 .btn-outline.active-blk {
-<<<<<<< .merge_file_yYNBmr
   color: white;
   background: #6B717E;
   border: solid 2px #6B717E;
@@ -431,16 +372,6 @@ footer .footer-below {
   color: white;
   background-color: #81A684;
   border-color: #81A684;
-=======
-  color: #D4ADCF;
-  background: black;
-  border: solid 2px black;
-}
-.btn-primary {
-  color: white;
-  background-color: #6B717E;
-  border-color: #6B717E;
->>>>>>> .merge_file_zxGVgC
   font-weight: 700;
 }
 .btn-primary:hover,
@@ -472,30 +403,17 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-<<<<<<< .merge_file_yYNBmr
   background-color: #81A684;
   border-color: #81A684;
 }
 .btn-primary .badge {
   color: #81A684;
-=======
-  background-color: #6B717E;
-  border-color: #6B717E;
-}
-.btn-primary .badge {
-  color: #6B717E;
->>>>>>> .merge_file_zxGVgC
   background-color: white;
 }
 .btn-success {
   color: white;
-<<<<<<< .merge_file_yYNBmr
   background-color: #FE5F55;
   border-color: #FE5F55;
-=======
-  background-color: #D4ADCF;
-  border-color: #D4ADCF;
->>>>>>> .merge_file_zxGVgC
   font-weight: 700;
 }
 .btn-success:hover,
@@ -504,13 +422,8 @@ fieldset[disabled] .btn-primary.active {
 .btn-success.active,
 .open .dropdown-toggle.btn-success {
   color: white;
-<<<<<<< .merge_file_yYNBmr
   background-color: #FE5F55;
   border-color: #FE5F55;
-=======
-  background-color: #128f76;
-  border-color: #11866f;
->>>>>>> .merge_file_zxGVgC
 }
 .btn-success:active,
 .btn-success.active,
@@ -608,11 +521,7 @@ fieldset[disabled] .btn-success.active {
   height: 75px;
   width: 1px;
   margin-left: 35px;
-<<<<<<< .merge_file_yYNBmr
   background-color: #81A684;
-=======
-  background-color: #6B717E;
->>>>>>> .merge_file_zxGVgC
   transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   /* IE 9 */
@@ -623,11 +532,7 @@ fieldset[disabled] .btn-success.active {
 .portfolio-modal .close-modal .lr .rl {
   height: 75px;
   width: 1px;
-<<<<<<< .merge_file_yYNBmr
   background-color: #81A684;
-=======
-  background-color: #6B717E;
->>>>>>> .merge_file_zxGVgC
   transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   /* IE 9 */
