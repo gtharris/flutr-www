@@ -6,3 +6,5 @@ If the later time frame has a higher sighting rate, color orange/red. Use green/
 Keep track of highest and lowest values so that a legend can be generated.
 
 
+Movement over time
+Use heatmaps for this one.

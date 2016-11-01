@@ -2,155 +2,628 @@
 <html lang="en">
 
 <head>
-  <title>UBR Project</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>UBR</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/css/bootstrap/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="vendor/css/freelancer.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
 
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <!-- Bootstrap Core CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <!-- Custom CSS -->
-  <link href="css/scrolling-nav.css" rel="stylesheet">
-  <link href="css/index.css" rel="stylesheet">
-  <!-- JS -->
-  <!-- jQuery -->
-  <script src="js/jquery.js"></script>
 
-  <!-- Bootstrap Core JavaScript -->
-  <script src="js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
 
-  <!-- Scrolling Nav JavaScript -->
-  <script src="js/jquery.easing.min.js"></script>
-  <script src="js/scrolling-nav.js"></script>
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Favicon -->
+    <link href="images/ubr/favicon.ico" rel="icon" type="image/x-icon" />
+
 </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div id = "brand_large" class="navbar-header page-scroll mydiv">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+
+                <a class="navbar-brand" href="#page-top">Unified Butterfly Recorder</a>
+            </div>
+            <div id = "brand_small" class="navbar-header page-scroll mydiv">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+
+                <a class="navbar-brand" href="#page-top">UBR</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#about">About</a>
+                    </li>
+
+                    <li class="page-scroll">
+                        <a href="#blog">Dev Blog</a>
+                      </li>
+
+                    <li class="page-scroll">
+                        <a href="#dev_stack">Stack</a>
+                    </li>
+
+                    <li class="page-scroll">
+                        <a href="#documentation">Documentation</a>
+                    </li>
+
+                    <li class="page-scroll">
+                        <a href="#the_swarm">Swarm</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-lg-12">
+                    <img class="img-responsive" src="images/ubr/butterfly_clear.png" alt="">
+
+                    <div class="intro-text">
+                        <span class="name">Unified Butterfly Recorder</span>
+                        <hr class="leaf-light">
+                        <span class="skills">Data storage and Vizualization Tool</span>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+
+        <!-- About Section -->
+        <section  id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2>About</h2>
+                        <hr class="leaf-primary">
+                    </div>
+                </div>
+                    <div class="row" >
+                        <div class="col-sm-4 portfolio-item ">
+                            <img src="images/ubr/app_sighting.jpeg" style="max-height:400px"></img>
+                        </div>
+
+                        <div class="col-sm-4 portfolio-item">
+                            <img src="images/ubr/app_screenshot.png" style="max-height:400px"></img>
+                        </div>
+
+                        <div class="col-sm-4 portfolio-item">
+                            <img src="images/ubr/app_survey.jpeg" style="max-height:400px"></img>
+                        </div>
+                        <div class="">
+                            <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+                        </div>
+                        <div class=" text-center">
+                            <a href="https://itunes.apple.com/us/app/reiman-gardens-ubr/id1127478512?mt=8" class="btn btn-lg btn-outline-blk">
+                                <i class="fa fa-download"></i> Download iOS
+                            </a>
+                            <a href="https://play.google.com/store/apps/details?id=edu.iastate.ece.butterflies&hl=en&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1" class="btn btn-lg btn-outline-blk">
+                                <i class="fa fa-download"></i> Download Android
+                            </a>
+
+                        </div>
+
+                  </div>
+
+            </div>
+
+        </section>
+
+        <!-- Dev Blog Section -->
+   <section class="success" id="blog">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Development Blog</h2>
+                    <hr class="leaf-light">
+                </div>
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-2">
+                    <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
+                </div>
+                <div class="col-lg-4">
+                    <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+                </div>
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <a href="#" class="btn btn-lg btn-outline">
+                        <i class="fa fa-external-link"></i> Visit Blog
+                    </a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Stack Grid Section -->
+    <section id="dev_stack">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Stack</h2>
+                    <hr class="leaf-primary">
+                </div>
+            </div>
+            <div class="row">
+              <!-- Github -->
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="images/logos/GitHub-Mark-120px-plus.png" width="200" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <!-- Trello -->
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="images/logos/trello-mark-blue.png" width="200" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <!-- Google Maps -->
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="images/logos/google-maps-logo.png" width="200" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <!-- App Engine -->
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="images/logos/google-app-engine-logo.jpg" width="200" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <!-- D3.js -->
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="images/logos/d3.js" width="200" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="images/logos/submarine.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Documentation -->
+
+    <section class="success" id="documentation">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Documentation</h2>
+                    <hr class="leaf-light">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-2">
+                    <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
+                </div>
+                <div class="col-lg-4">
+                    <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+                </div>
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <a href="#" class="btn btn-lg btn-outline">
+                        <i class="fa fa-download"></i> Download Documents
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Team Section -->
+    <section id="the_swarm" style="min-height:100%">
       <div class="container">
-        <div class="navbar-header page-scroll">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-
-          <a class="navbar-brand page-scroll" href="#page-top">Home</a>
-        </div>
-
-<!-- Collect the nav links, forms, and other content for toggling -->
-
-      <div class="collapse navbar-collapse navbar-ex1-collapse">
-        <img src="images/monarch.png" style="width:40px;">
-          <ul class="nav navbar-nav">
-<!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-            <li class="hidden">
-              <a class="page-scroll" href="#page-top"></a>
-            </li>
-
-            <li>
-              <a class="page-scroll" href="#weekly_reports">Weekly Reports</a>
-            </li>
-            <li>
-              <a class="page-scroll" href="#about_us">About Us</a>
-            </li>
-          </ul>
-        </div>
-
-<!-- /.navbar-collapse -->
-    </div>
-        <!-- /.container -->
-  </nav>
-
-  <section id="intro" style="min-height:100%">
-    <div class="jumbotron text-center">
-      <h2 style="color:black;">Unified Butterfly Recorder</h2>
-      <p style="color:black;">Project Website</p>
-    </div>
-
-  <h3>Project Description</h3><hr>
-Butterflies populations are often utilized as indicator species; from monitoring climate change to determining the quality of habitat restoration, butterfly numbers are used frequently to help answer scientific questions. However, across the nation and world, there is a lack of information on native butterfly species, their annual dispersal, and numbers. To fill this gap in information, the scientific community has begun relying on citizen scientists - volunteers of various backgrounds - to go out into the field and perform butterfly surveys. In January 2013, Team Butterfly, Senior Design Team 13-08, set out to create the Unified Butterfly Recorder (UBR) app for the Android platform. Throughout 2013, with the collaboration of the Reiman Gardens Entomology staff, UBR was designed, programmed, and released in beta on the Google Play store to be tested by the community. This app has the potential to significantly and positives alter the course of global conservation research. It is being tested currently by researchers in the United States, Canada, Germany, the Netherlands, and other countries around the world. In July 2016, Senior Design Team 16-14 followed up with an iOS version of UBR that was developed using feedback from the community, these two versions allowed UBR to be used on a large share of mobile devices. The Reiman Gardens Entomology staff, along with utilizing UBR in their conservation work, frequently presents these apps and studies performed on their usability at various conferences in the entomology and conservation fields.
-<br><br>
-The release of the apps have produced a large amount of excitement throughout the community due to their ease of use, standardization of data, and the potential for visualization tools it can provide. However once this data is collected, the user must analyze the data manually.
-<br><br>
-The development of the UBR data recording applications is largely complete. However, to further these efforts we would like for the users to be able to analyze their data in an online web application with data visualization interfaces.
-<hr>What are we we working on?<hr>
-This phase of the project will include:
-<br><ul><li>
-Creation of a server based application to interface with UBR apps and collect data from the mobile clients
-</li><br><li>
-Development of a user-specific web client to query data uploaded from UBR apps
-</li><br><li>
-Implementation of data analysis functionality for data obtained by a subset of registered surveyors
-</li><br><li>
-Implementation of an interface through which data can be sent to external conservation organizations.
-</li><br><li>
-Working directly with Reiman Gardens Entomology staff, butterfly conservation organizations, post graduates from previous projects.
-</li></ul>
-  </section>
-  <section id="weekly_reports" style="min-height:100%">
-	<div class="jumbotron text-center">
-		<h3 style="color:black;">Weekly Reports</h3>
-	</div>
-	We will be uploading reports every Tuesday that will document our progress towards the development of the Unified Butterfly Recorder.
-  </section>
-  <section id="about_us" style="min-height:100%">
-    <div class="jumbotron text-center">
-		<h3 style="color:black;">About Us</h3>
-	  </div>
-		<div class="row">
-            <div class="col-lg-4 col-sm-6 text-center">
-                <img class="img-circle img-responsive img-center" src="images/rsz_greg_profile.jpg" alt="">
-                <h3>Greg Harris
+          <div class="row">
+              <div class="col-lg-12 text-center">
+                  <h2>The Swarm</h2>
+                  <hr class="leaf-primary">
+              </div>
+          </div>
+      <div class="row">
+              <div class="col-lg-4 col-sm-6 text-center">
+                  <img class="img-circle img-responsive center-block" src="images/profile/rsz_greg_profile.jpg" alt=""/>
+                  <h3>Greg Harris
                     <small>Project Leader</small>
-                </h3>
-                <p>I channel Greg Jennings</p>
+                  </h3>
+                  <p>Software Engineering Senior
+                  <br>Implementing Agile Scrum methodologies
+                  <br>Passionate art fanatic and music geek
+                  </p>
+
+                  <a href=""><img  src="images/logos/In-2C-34px-TM.png"/></a>
+                  <a href=""><img src="images/logos/GitHub-Mark-32px.png" /> </a>
+
+              </div>
+              <div class="col-lg-4 col-sm-6 text-center">
+                  <img class="img-circle img-responsive center-block" src="http://placehold.it/200x200" alt=""/>
+                  <h3>Austin Euchner
+                      <small>Key Concepts Holder</small>
+                  </h3>
+                  <p>I'm new, I don't know what to do.</p>
+
+                  <a href=""><img src="images/logos/In-2C-34px-TM.png"/></a>
+                  <a href=""><img src="images/logos/GitHub-Mark-32px.png" /> </a>
+
+              </div>
+              <div class="col-lg-4 col-sm-6 text-center">
+                  <img class="img-circle img-responsive center-block" src="images/profile/andrew_profile.jpg" alt=""/>
+                  <h3>Andrew Dorn
+                      <small>Web Master</small>
+                  </h3>
+                  <p>I'm a software engineer with some experience building data visualization tools. My plan is to leverage those skills towards building and refining the UBR web app.  </p>
+
+
+                    <a href="https://www.linkedin.com/in/andrew-dorn-999207b2"><img src="images/logos/In-2C-34px-TM.png"/></a>
+                    <a href="https://github.com/AndrewDorn"><img src="images/logos/GitHub-Mark-32px.png"/> </a>
+
+
+              </div>
+              <div class="col-lg-4 col-sm-6 text-center">
+                  <img class="img-circle img-responsive center-block" src="images/profile/diva_profilepic.jpg" alt="">
+                  <h3>Diva Agarwal
+                      <small>Job Title</small>
+                  </h3>
+                  <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+
+                  <a href=""><img src="images/logos/In-2C-34px-TM.png"/></a>
+                  <a href=""><img src="images/logos/GitHub-Mark-32px.png"  /></a>
+              </div>
+              <div class="col-lg-4 col-sm-6 text-center">
+                  <img class="img-circle img-responsive center-block" src="http://placehold.it/200x200" alt=""/>
+                  <h3>Alan Tentinger
+                      <small>Job Title</small>
+                  </h3>
+                  <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+
+                  <a href=""><img src="images/logos/In-2C-34px-TM.png"/></a>
+                  <a href=""><img src="images/logos/GitHub-Mark-32px.png"  /> </a>
+              </div>
+              <div class="col-lg-4 col-sm-6 text-center">
+                  <img class="img-circle img-responsive center-block" src="http://placehold.it/200x200" alt=""/>
+                  <h3>Natan Brockman
+                      <small>Client</small>
+                  </h3>
+                  <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+
+                  <a href=""><img src="images/logos/In-2C-34px-TM.png"/></a>
+              </div>
+              <div class="col-lg-4 col-sm-6 text-center">
+                  <img class="img-circle img-responsive center-block" src="http://placehold.it/200x200" alt=""/>
+                  <h3>Diane Rover
+                      <small>Project Advisor</small>
+                  </h3>
+                  <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+
+                  <a href=""><img src="images/logos/In-2C-34px-TM.png"/></a>
+
+              </div>
+          </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-4">
+                        <h3>Iowa State University</h3>
+                        <p> 2229 Lincoln Way,
+                            <br>Ames, IA 50011</p>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Around the Web</h3>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>About Freelancer</h3>
+                        <p>Freelance is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-4 col-sm-6 text-center">
-                <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
-                <h3>Austin Euchner
-                    <small>Key Concepts Holder</small>
-                </h3>
-                <p>I'm new, I don't know what to do.</p>
-            </div>
-            <div class="col-lg-4 col-sm-6 text-center">
-                <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
-                <h3>Andrew Dorn
-                    <small>Web Master</small>
-                </h3>
-                <p>I'm a software engineer with some experience building data visualization tools. My plan is to leverage those skills towards building and refining the UBR web app.
-				<br><a href="https://www.linkedin.com/in/andrew-dorn-999207b2"><img src="images/Logo-2C-34px-TM.png"</a>
-				<a href="https://github.com/AndrewDorn"><img src="images/GitHub_Logo.png" style="max-height:34px;">
-				</a>
-				</p>
-            </div>
-            <div class="col-lg-4 col-sm-6 text-center">
-                <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
-                <h3>Diva Agarwal
-                    <small>Job Title</small>
-                </h3>
-                <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
-            </div>
-            <div class="col-lg-4 col-sm-6 text-center">
-                <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
-                <h3>Alan Tentinger
-                    <small>Job Title</small>
-                </h3>
-                <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+              <div class="footer-below">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-lg-12">
+                      Copyright &copy; Your Website 2016
+                      </div>
+                    </div>
+                   </div>
             </div>
         </div>
-	</section>
+    </footer>
 
-	<div class="navbar navbar-default navbar-fixed-bottom">
-    <div class="container">
-      <a href='https://play.google.com/store/apps/details?id=edu.iastate.ece.butterflies&hl=en&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play', style="max-height:60px;", src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a>
-	  <a href="https://itunes.apple.com/us/app/reiman-gardens-ubr/id1127478512?mt=8"><img alt='Get it on iTunes', style="max-height:60px;", src='https://linkmaker.itunes.apple.com/images/badges/en-us/badge_appstore-lrg.svg'/></a>
-    </div>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
     </div>
 
-	<br><br><br><br>
+    <!-- Portfolio Modals -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>GitHub</h2>
+                            <hr class="leaf-primary">
+                            <img src="images/logos/GitHub-Mark-120px-plus.png" class="img-responsive img-centered" width="120" alt="">
+                            <p>GitHub is a widely used repository for coding projects that offers several ways for developers to colaborate.
+							<br>We use GitHub to store our in code, back up previous versions, and share our work with others once it's ready.</p>
+							<strong><a href="http://github.com">Visit GitHub</a></strong>
+							<hr>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Trello</h2>
+                            <hr class="leaf-primary">
+                            <img src="images/logos/trello-mark-blue.png" class="img-responsive img-centered" alt="" width="120">
+                            <p>Due to our use of Agile coding practices, we need a way to keep up to date on what tasks the team has at any given moment.
+							Trello serves as an excellent way to organize tasks within the group.
+							We also use it as a calendar to keep track of upcoming due dates for deliverables.</p>
+                            <strong><a href="http://trello.com">Visit Trello</a></strong>
+							<hr>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Google Maps API</h2>
+                            <hr class="leaf-primary">
+                            <img src="images/logos/google-maps-logo.png" class="img-responsive img-centered" alt="" width="120">
+                            <p>Google Maps is well known as a product that offers directions, but it also has a very efficient API for web developers.
+							We are using this interface to build several types of visualization options to aid researchers.</p>
+                            <strong><a href="https://developers.google.com/maps/">Visit the Google Maps API</a></strong>
+							<hr>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Google App Engine</h2>
+                            <hr class="leaf-primary">
+                            <img src="images/logos/google-app-engine-logo.jpg" class="img-responsive img-centered" alt="" width="120">
+                            <p>Google App Engine is a hosting platform that includes authentication, data storage, and an API used by many companies and products.
+							By using this platform we anticipate increased development velocity and a stable product.</p>
+							<strong><a href="https://cloud.google.com/appengine/">Visit the Google Maps API</a></strong>
+							<hr>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project Title</h2>
+                            <hr class="leaf-primary">
+                            <img src="images/logos/d3.js" class="img-responsive img-centered" alt="" width = "120">
+                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project Title</h2>
+                            <hr class="leaf-primary">
+                            <img src="img/portfolio/submarine.png" class="img-responsive img-centered" alt="">
+                            <p>Description 6</p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="vendor/js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+
+
+    <!-- Theme JavaScript -->
+    <script src="vendor/js/freelancer.min.js"></script>
 
 
 </body>

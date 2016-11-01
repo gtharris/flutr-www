@@ -3,6 +3,15 @@
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
+
+ /*
+ * Light Green possible grass - 81A684
+ * Dark Gree 04724D
+ * Red - FE5F55
+ * Purple - D4ADCF
+ * black - 6B717E
+ *  Brown ?
+ */
 body {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   overflow-x: hidden;
@@ -18,7 +27,8 @@ a:hover,
 a:focus,
 a:active,
 a.active {
-  color: #D4ADCF;
+   /*Only Used in footer*/
+  color: #6B717E;
   outline: none;
 }
 h1,
@@ -54,22 +64,26 @@ hr.leaf-light {
   border-color: white;
 }
 hr.leaf-light:after {
-  background-color: #D4ADCF;
-  color: white;
+  /*Same as header*/
+  background-color: #A0D4E5;
+  color: #81A684;
 }
 hr.leaf-primary {
+  /* Line Leaf Color */
   border-color: #6B717E;
 }
 hr.leaf-primary:after {
   background-color: white;
-  color: #6B717E;
+  /* Leaf Color */
+  color: #81A684;
 }
 .img-centered {
   margin: 0 auto;
 }
 header {
+  /*Sky*/
   text-align: center;
-  background: #D4ADCF;
+  background: #A0D4E5;
   color: white;
 }
 header .container {
@@ -104,11 +118,13 @@ header .intro-text .skills {
   }
 }
 .navbar-custom {
+  /* Navbar back  SPACE COLOR*/
   background: #6B717E;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   border: none;
+
 }
 .navbar-custom a:focus {
   outline: none;
@@ -129,22 +145,26 @@ header .intro-text .skills {
   color: white;
 }
 .navbar-custom .navbar-nav li a:hover {
-  color: #D4ADCF;
-  outline: none;
+  /*Sun*/
+  color: white;
+  outline:#FE5F55 ;
+  background: #EDE580;
 }
 .navbar-custom .navbar-nav li a:focus,
 .navbar-custom .navbar-nav li a:active {
   color: white;
 }
 .navbar-custom .navbar-nav li.active a {
+  /*Sun*/
   color: white;
-  background: #D4ADCF;
+  outline:#FE5F55 ;
+  background: #EDE580;
 }
 .navbar-custom .navbar-nav li.active a:hover,
 .navbar-custom .navbar-nav li.active a:focus,
 .navbar-custom .navbar-nav li.active a:active {
   color: white;
-  background: #D4ADCF;
+  background: #EDE580;
 }
 .navbar-custom .navbar-toggle {
   color: white;
@@ -154,9 +174,9 @@ header .intro-text .skills {
 }
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
-  background-color: #D4ADCF;
+  background-color: #EDE580;
   color: white;
-  border-color: #D4ADCF;
+  border-color: #EDE580;
 }
 
 @media (min-width: 768px) {
@@ -187,7 +207,7 @@ section h2 {
   font-size: 3em;
 }
 section.success {
-  background: #D4ADCF;
+  background: #A0D4E5;
   color: white;
 }
 @media (max-width: 767px) {
@@ -290,6 +310,7 @@ section.success {
   opacity: 1;
 }
 .floating-label-form-group-with-focus label {
+  /* TO FIND*/
   color: #D4ADCF;
 }
 form .row:first-child .floating-label-form-group {
@@ -303,14 +324,14 @@ footer h3 {
 }
 footer .footer-above {
   padding-top: 50px;
-  background-color: #6B717E;
+  background-color: #81A684;
 }
 footer .footer-col {
   margin-bottom: 50px;
 }
 footer .footer-below {
   padding: 25px 0;
-  background-color: #04724D;
+  background-color: #6B717E;
 }
 .btn-outline {
   color: white;
@@ -324,14 +345,17 @@ footer .footer-below {
 .btn-outline:focus,
 .btn-outline:active,
 .btn-outline.active {
-  color: #D4ADCF;
+
+ /*Should be black
+  */
+  color: #6B717E;
   background: white;
   border: solid 2px white;
 }
 .btn-outline-blk {
-  color: black;
+  color: #6B717E;
   font-size: 20px;
-  border: solid 2px black;
+  border: solid 2px #6B717E;
   background: transparent;
   transition: all 0.3s ease-in-out;
   margin-top: 15px;
@@ -340,14 +364,14 @@ footer .footer-below {
 .btn-outline-blk:focus,
 .btn-outline-blk:active,
 .btn-outline.active-blk {
-  color: #D4ADCF;
-  background: black;
-  border: solid 2px black;
+  color: white;
+  background: #6B717E;
+  border: solid 2px #6B717E;
 }
 .btn-primary {
   color: white;
-  background-color: #6B717E;
-  border-color: #6B717E;
+  background-color: #81A684;
+  border-color: #81A684;
   font-weight: 700;
 }
 .btn-primary:hover,
@@ -379,17 +403,17 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-  background-color: #6B717E;
-  border-color: #6B717E;
+  background-color: #81A684;
+  border-color: #81A684;
 }
 .btn-primary .badge {
-  color: #6B717E;
+  color: #81A684;
   background-color: white;
 }
 .btn-success {
   color: white;
-  background-color: #D4ADCF;
-  border-color: #D4ADCF;
+  background-color: #FE5F55;
+  border-color: #FE5F55;
   font-weight: 700;
 }
 .btn-success:hover,
@@ -398,8 +422,8 @@ fieldset[disabled] .btn-primary.active {
 .btn-success.active,
 .open .dropdown-toggle.btn-success {
   color: white;
-  background-color: #128f76;
-  border-color: #11866f;
+  background-color: #FE5F55;
+  border-color: #FE5F55;
 }
 .btn-success:active,
 .btn-success.active,
@@ -497,7 +521,7 @@ fieldset[disabled] .btn-success.active {
   height: 75px;
   width: 1px;
   margin-left: 35px;
-  background-color: #6B717E;
+  background-color: #81A684;
   transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   /* IE 9 */
@@ -508,7 +532,7 @@ fieldset[disabled] .btn-success.active {
 .portfolio-modal .close-modal .lr .rl {
   height: 75px;
   width: 1px;
-  background-color: #6B717E;
+  background-color: #81A684;
   transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   /* IE 9 */

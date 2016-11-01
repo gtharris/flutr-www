@@ -1,12 +1,11 @@
- html {
-  position: relative;
-  min-height: 100%;
+@media screen and (min-width: 1028px) {
+   div#brand_small { display: none }
 }
-body{
-	background-color: rgb(0, 100, 0);
-	color: rgb(255, 255, 255);
-	font-size: 20px;
-	padding-left:20px;
-	padding-right:20px;
-	padding-top:50px;
+@media screen and (max-width: 1028px) {
+   div#brand_large { display: none }
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
