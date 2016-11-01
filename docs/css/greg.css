@@ -1,6 +1,0 @@
-@media screen and (min-width: 961px) {
-   div#brand_small { display: none }
-}
-@media screen and (max-width: 961px) {
-   div#brand_large { display: none }
-}
