@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Unified Butterfly Recorder</title>
+    <title>UBR</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/css/bootstrap/bootstrap.min.css" rel="stylesheet">
@@ -17,6 +17,8 @@
     <!-- Theme CSS -->
     <link href="vendor/css/freelancer.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
+
+
 
     <!-- Custom JS -->
 
@@ -26,7 +28,8 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
-
+    <!-- Favicon -->
+    <link href="images/ubr/favicon.ico" rel="icon" type="image/x-icon" />
 
 </head>
 
@@ -57,14 +60,13 @@
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
-
-                    <li class="page-scroll">
-                        <a href="#blog">Dev Blog</a>
-                    </li>
-
                     <li class="page-scroll">
                         <a href="#about">About</a>
                     </li>
+
+                    <li class="page-scroll">
+                        <a href="#blog">Dev Blog</a>
+                      </li>
 
                     <li class="page-scroll">
                         <a href="#dev_stack">Stack</a>
@@ -106,15 +108,55 @@
         </div>
 
     </header>
-        <!-- Dev Blog Section -->
 
-   <section id="blog">
+        <!-- About Section -->
+        <section  id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2>About</h2>
+                        <hr class="leaf-primary">
+                    </div>
+                </div>
+                    <div class="row" >
+                        <div class="col-sm-4 portfolio-item ">
+                            <img src="images/ubr/app_sighting.jpeg" style="max-height:400px"></img>
+                        </div>
+
+                        <div class="col-sm-4 portfolio-item">
+                            <img src="images/ubr/app_screenshot.png" style="max-height:400px"></img>
+                        </div>
+
+                        <div class="col-sm-4 portfolio-item">
+                            <img src="images/ubr/app_survey.jpeg" style="max-height:400px"></img>
+                        </div>
+                        <div class="">
+                            <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+                        </div>
+                        <div class=" text-center">
+                            <a href="https://itunes.apple.com/us/app/reiman-gardens-ubr/id1127478512?mt=8" class="btn btn-lg btn-outline-blk">
+                                <i class="fa fa-download"></i> Download iOS
+                            </a>
+                            <a href="https://play.google.com/store/apps/details?id=edu.iastate.ece.butterflies&hl=en&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1" class="btn btn-lg btn-outline-blk">
+                                <i class="fa fa-download"></i> Download Android
+                            </a>
+
+                        </div>
+
+                  </div>
+
+            </div>
+
+        </section>
+
+        <!-- Dev Blog Section -->
+   <section class="success" id="blog">
 
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2>Development Blog</h2>
-                    <hr class="leaf-primary">
+                    <hr class="leaf-light">
                 </div>
             <div class="row">
                 <div class="col-lg-4 col-lg-offset-2">
@@ -124,7 +166,7 @@
                     <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
                 </div>
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <a href="#" class="btn btn-lg btn-outline-blk">
+                    <a href="#" class="btn btn-lg btn-outline">
                         <i class="fa fa-external-link"></i> Visit Blog
                     </a>
                 </div>
@@ -133,32 +175,7 @@
         </div>
     </section>
 
-    <!-- About Section -->
-    <section class="success" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>About</h2>
-                    <hr class="leaf-light">
-                </div>
-            </div>
 
-            <div class="row">
-                <div class="col-lg-4 col-lg-offset-2">
-                    <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
-                </div>
-				<img src="images/ubr/app_screenshot.png" style="max-height:400px"></img>
-                <div class="col-lg-4">
-                    <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
-                </div>
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <a href="#" class="btn btn-lg btn-outline">
-                        <i class="fa fa-download"></i> Download Theme
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
 
 
 
@@ -172,6 +189,7 @@
                 </div>
             </div>
             <div class="row">
+              <!-- Github -->
                 <div class="col-sm-4 portfolio-item">
                     <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
@@ -182,6 +200,7 @@
                         <img src="images/logos/GitHub-Mark-120px-plus.png" width="200" class="img-responsive" alt="">
                     </a>
                 </div>
+                <!-- Trello -->
                 <div class="col-sm-4 portfolio-item">
                     <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
@@ -192,6 +211,7 @@
                         <img src="images/logos/trello-mark-blue.png" width="200" class="img-responsive" alt="">
                     </a>
                 </div>
+                <!-- Google Maps -->
                 <div class="col-sm-4 portfolio-item">
                     <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
@@ -202,6 +222,7 @@
                         <img src="images/logos/google-maps-logo.png" width="200" class="img-responsive" alt="">
                     </a>
                 </div>
+                <!-- App Engine -->
                 <div class="col-sm-4 portfolio-item">
                     <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
@@ -212,6 +233,7 @@
                         <img src="images/logos/google-app-engine-logo.jpg" width="200" class="img-responsive" alt="">
                     </a>
                 </div>
+                <!-- D3.js -->
                 <div class="col-sm-4 portfolio-item">
                     <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
@@ -219,7 +241,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="images/logos/safe.png" class="img-responsive" alt="">
+                        <img src="images/logos/d3.js" width="200" class="img-responsive" alt="">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
@@ -254,7 +276,7 @@
                 </div>
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <a href="#" class="btn btn-lg btn-outline">
-                        <i class="fa fa-download"></i> Download Theme
+                        <i class="fa fa-download"></i> Download Documents
                     </a>
                 </div>
             </div>
@@ -282,8 +304,8 @@
                   <br>Passionate art fanatic and music geek
                   </p>
 
-                  <br/><a href=""><img src="images/logos/In-2C-34px-TM.png"></a>
-                  <a href=""><img src="images/logos/GitHub-Mark-32px.png" style="max-height:34px;"/> </a>
+                  <a href=""><img  src="images/logos/In-2C-34px-TM.png"/></a>
+                  <a href=""><img src="images/logos/GitHub-Mark-32px.png" /> </a>
 
               </div>
               <div class="col-lg-4 col-sm-6 text-center">
@@ -293,9 +315,8 @@
                   </h3>
                   <p>I'm new, I don't know what to do.</p>
 
-
-                  <br/><a href=""><img src="images/logos/In-2C-34px-TM.png"/></a>
-                  <a href=""><img src="images/logos/GitHub-Mark-32px.png" style="max-height:34px;"/> </a>
+                  <a href=""><img src="images/logos/In-2C-34px-TM.png"/></a>
+                  <a href=""><img src="images/logos/GitHub-Mark-32px.png" /> </a>
 
               </div>
               <div class="col-lg-4 col-sm-6 text-center">
@@ -305,8 +326,9 @@
                   </h3>
                   <p>I'm a software engineer with some experience building data visualization tools. My plan is to leverage those skills towards building and refining the UBR web app.  </p>
 
-                    <br/><a href="https://www.linkedin.com/in/andrew-dorn-999207b2"><img src="images/logos/In-2C-34px-TM.png"/></a>
-                    <a href="https://github.com/AndrewDorn"><img src="images/logos/GitHub-Mark-32px.png" style="max-height:34px;"/> </a>
+
+                    <a href="https://www.linkedin.com/in/andrew-dorn-999207b2"><img src="images/logos/In-2C-34px-TM.png"/></a>
+                    <a href="https://github.com/AndrewDorn"><img src="images/logos/GitHub-Mark-32px.png"/> </a>
 
 
               </div>
@@ -316,8 +338,9 @@
                       <small>Job Title</small>
                   </h3>
                   <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
-                  <br/><a href=""><img src="images/logos/In-2C-34px-TM.png"/></a>
-                  <a href=""><img src="images/logos/GitHub-Mark-32px.png" style="max-height:34px;"/></a>
+
+                  <a href=""><img src="images/logos/In-2C-34px-TM.png"/></a>
+                  <a href=""><img src="images/logos/GitHub-Mark-32px.png"  /></a>
               </div>
               <div class="col-lg-4 col-sm-6 text-center">
                   <img class="img-circle img-responsive center-block" src="http://placehold.it/200x200" alt=""/>
@@ -325,8 +348,9 @@
                       <small>Job Title</small>
                   </h3>
                   <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
-                  <br><a href=""><img src="images/logos/In-2C-34px-TM.png"/></a>
-                  <a href=""><img src="images/logos/GitHub-Mark-32px.png" style="max-height:34px;"/> </a>
+
+                  <a href=""><img src="images/logos/In-2C-34px-TM.png"/></a>
+                  <a href=""><img src="images/logos/GitHub-Mark-32px.png"  /> </a>
               </div>
               <div class="col-lg-4 col-sm-6 text-center">
                   <img class="img-circle img-responsive center-block" src="http://placehold.it/200x200" alt=""/>
@@ -334,7 +358,8 @@
                       <small>Client</small>
                   </h3>
                   <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
-                  <br><a href=""><img src="images/logos/In-2C-34px-TM.png"/></a>
+
+                  <a href=""><img src="images/logos/In-2C-34px-TM.png"/></a>
               </div>
               <div class="col-lg-4 col-sm-6 text-center">
                   <img class="img-circle img-responsive center-block" src="http://placehold.it/200x200" alt=""/>
@@ -342,7 +367,8 @@
                       <small>Project Advisor</small>
                   </h3>
                   <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
-                  <br><a href=""><img src="images/logos/In-2C-34px-TM.png"/></a>
+
+                  <a href=""><img src="images/logos/In-2C-34px-TM.png"/></a>
 
               </div>
           </div>
@@ -388,9 +414,7 @@
                   <div class="container">
                     <div class="row">
                       <div class="col-lg-12">
-                        <a href='https://play.google.com/store/apps/details?id=edu.iastate.ece.butterflies&hl=en&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play', style="max-height:60px;", src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a>
-                  			<a href="https://itunes.apple.com/us/app/reiman-gardens-ubr/id1127478512?mt=8"><img alt='Get it on iTunes', style="max-height:60px;", src='https://linkmaker.itunes.apple.com/images/badges/en-us/badge_appstore-lrg.svg'/></a>
-                        Copyright &copy; Your Website 2016
+                      Copyright &copy; Your Website 2016
                       </div>
                     </div>
                    </div>
@@ -526,7 +550,7 @@
                         <div class="modal-body">
                             <h2>Project Title</h2>
                             <hr class="leaf-primary">
-                            <img src="img/portfolio/safe.png" class="img-responsive img-centered" alt="">
+                            <img src="images/logos/d3.js" class="img-responsive img-centered" alt="" width = "120">
                             <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
                             <ul class="list-inline item-details">
                                 <li>Client:
