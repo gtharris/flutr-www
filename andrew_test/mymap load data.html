@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Heatmaps</title>
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        height: 100%;
+      }
+      #floating-panel {
+        position: absolute;
+        top: 10px;
+        left: 25%;
+        z-index: 5;
+        background-color: #fff;
+        padding: 5px;
+        border: 1px solid #999;
+        text-align: center;
+        font-family: 'Roboto','sans-serif';
+        line-height: 30px;
+        padding-left: 10px;
+      }
+      #floating-panel {
+        background-color: #fff;
+        border: 1px solid #999;
+        left: 25%;
+        padding: 5px;
+        position: absolute;
+        top: 10px;
+        z-index: 5;
+      }
+    </style>
+</head>
+
+<body>
+	<div id="floating-panel">
+		Breadcrumbs <input type="file" id="breadcrumbLoader" name="files"/>
+		
+		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.0/themes/base/jquery-ui.css">
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	</div>
+	<div id="map"></div>
+	<script>
+	var map, heatmap;
+	function initMap() {
+		map = new google.maps.Map(document.getElementById('map'), {
+			zoom: 50,
+			center: {lat: 42.011439, lng: -93.638185},
+			mapTypeId: 'satellite'
+		});
+		
+		heatmap = new google.maps.visualization.HeatmapLayer({
+		data: [],
+		map: map
+		});
+	}
+	
+	function loadBreadcrumbs(evt) {
+		var file = evt.target.files[0];
+		
+		if(file){
+			var reader = new FileReader();
+			reader.onload = function(e){//Reading is async, have to set up a listener
+				var text = reader.result;
+				text = text.split('\n');
+				text.splice(0, 1);//first line is labels
+				for(var i = 0;i < text.length;i++)
+				{
+					var quoteFlag = false;
+					var commaFlag
+					var values = [];
+					var value = "";
+					var prevChar;
+					for(var j = 0;j < text[i].length;j++)
+					{
+						commaFlag = true;
+						if(text[i][j] == '\"' && prevChar != '\'')//start or end of a value
+						{
+							if(quoteFlag)//end of value
+							{
+								values.push(value);
+								value = "";
+								commaFlag = false;
+								quoteFlag = false;
+							}
+							else if(commaFlag)//start of value
+							{
+								quoteFlag = true;
+							}
+						}
+						else if(quoteFlag)//value is already started
+						{
+							value += text[i][j];
+						}
+						else if(!commaFlag)//value is not started, deal with whitespace
+						{
+							if(text[i][j] == ',')
+							{
+								commaFlag = true;
+							}
+						}
+						prevChar = text[i][j];
+					}
+					text[i] = values;
+				}
+				
+				//Add proto polygons and lines
+				var pathCoordinates = [];
+				for(var i = 0;i < text.length;i++)
+				{
+					if(text[i].length > 0){
+						var marker = new google.maps.Marker({
+							position: {lat: Number(text[i][4]), lng: Number(text[i][5])},
+							map: map,
+							title: text[i][0]
+						});
+						
+						pathCoordinates.push({lat: Number(text[i][4]), lng: Number(text[i][5])});
+						
+						new google.maps.Circle({
+						strokeColor: '#FF0000',
+						strokeOpacity: 0.0,
+						strokeWeight: 2,
+						fillColor: '#FF0000',
+						fillOpacity: 0.25,
+						map: map,
+						center: pathCoordinates[pathCoordinates.length-1],
+						radius: 10
+					});
+					}
+				}
+				
+				var surveyPath = new google.maps.Polyline({
+					path: pathCoordinates,
+					geodesic: true,
+					strokeColor: '#FF0000',
+					strokeOpacity: 1.0,
+					strokeWeight: 1
+				});
+				
+				surveyPath.setMap(map);
+			}
+			reader.readAsText(file);
+		}
+		
+	}
+	document.getElementById('breadcrumbLoader').addEventListener('change', loadBreadcrumbs, false);
+	
+	</script>
+	<script async defer
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFCUvk298LyMesZK5P7dijbxDzavtJcf8&libraries=visualization&callback=initMap">
+	</script>
+</body>
+</html>
