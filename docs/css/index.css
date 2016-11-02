@@ -4,11 +4,7 @@
 @media screen and (max-width: 1028px) {
    div#brand_large { display: none }
 }
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 .list-group-scroll{
     max-height: 300px;
     overflow-y:scroll;
