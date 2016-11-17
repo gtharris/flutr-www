@@ -1,13 +1,7 @@
-language: java
+language: go
 deploy:
   provider: gae
   keyfile: keys/ubr-1708-test-d70fb737705d.json
-  project: ubr-1708-test
-  version:
+  project: ubr-1708-prod
   on:
-    tags: true
     branch: master
-before_install:
-- openssl aes-256-cbc -K $encrypted_ab71e82ed14d_key -iv $encrypted_ab71e82ed14d_iv
-  -in ubr-1708-test-d70fb737705d.json.enc -out keys/ubr-1708-test-d70fb737705d.json
-  -d
