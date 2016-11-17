@@ -1,7 +1,7 @@
 language: go
 deploy:
   provider: gae
-  keyfile: keys/ubr-1708-test-d70fb737705d.json
+  keyfile: 
   project: ubr-1708-prod
   on:
     branch: master
