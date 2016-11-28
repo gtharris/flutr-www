@@ -1,12 +1,10 @@
 ---
-title:  "Sample post"
+title:  "Presentation Fall 2016"
 published: true
-permalink: samplepost.html
-published: false
-summary: "This is some summary frontmatter for my sample post."
-tags: [news, getting_started]
+permalink: presentation_fall_2016.html
+summary: "The team will be presenting this semesters work"
+tags: [news, presentation]
 ---
-
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries
 
 ## Heading

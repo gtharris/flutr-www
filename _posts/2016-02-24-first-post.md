@@ -2,6 +2,7 @@
 title:  "Welcome to Jekyll!"
 categories: jekyll update
 permalink: myupdate.html
+published: false
 tags: [news]
 ---
 
