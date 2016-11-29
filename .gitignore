@@ -3,3 +3,4 @@ _site
 _data
 _includes
 pages
+keys/*.json
