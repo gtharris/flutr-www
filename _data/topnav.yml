@@ -14,12 +14,24 @@ topnav_dropdowns:
       folderitems:
         - title: Jekyll Documentation Theme
           url: /mydoc_introduction.html
-        - title: Go-lang
-          url: /go/golang_introduction.html
-        - title: D3.js
-          url: /js/d3_introduction.html
+        - title: Server
+          url: /server_introduction.html
+        - title: Visualization
+          url: /visualization_introduction.html
         - title: Google App Engine
-          url: /gae/gae_introduction.html
+          url: /gae_introduction.html
+    - title: Development Strategy
+      folderitems:
+          - title: Agile
+            url: /agile_introduction.html
+          - title: Clean Architecture
+            url: /clean_introduction.html
+          - title: Continous Integration
+            url: /ci_introduction.html
+          - title: Testing
+            url: /testing_introduction.html
+
+
 
 
 #    - title: Jekyll Resources

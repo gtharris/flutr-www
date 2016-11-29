@@ -10,6 +10,31 @@
 {% elsif page.sidebar == "mydoc_sidebar" %}
 {% assign sidebar = site.data.sidebars.mydoc_sidebar.entries %}
 
+{% comment %}
+Custom Sidebars
+{% endcomment %}
+
+{% elsif page.sidebar == "agile_sidebar" %}
+{% assign sidebar = site.data.sidebars.agile_sidebar.entries %}
+
+{% elsif page.sidebar == "gae_sidebar" %}
+{% assign sidebar = site.data.sidebars.gae_sidebar.entries %}
+
+{% elsif page.sidebar == "server_sidebar" %}
+{% assign sidebar = site.data.sidebars.server_sidebar.entries %}
+
+{% elsif page.sidebar == "testing_sidebar" %}
+{% assign sidebar = site.data.sidebars.testing_sidebar.entries %}
+
+{% elsif page.sidebar == "visualization_sidebar" %}
+{% assign sidebar = site.data.sidebars.visualization_sidebar.entries %}
+
+{% elsif page.sidebar == "ci_sidebar" %}
+{% assign sidebar = site.data.sidebars.ci_sidebar.entries %}
+
+{% elsif page.sidebar == "clean_sidebar" %}
+{% assign sidebar = site.data.sidebars.clean_sidebar.entries %}
+
 {% else %}
 {% assign sidebar = site.data.sidebars.home_sidebar.entries %}
 {% endif %}

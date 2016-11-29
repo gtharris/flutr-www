@@ -2,27 +2,53 @@
 
 entries:
 - title: Sidebar
-  levels: one
   folders:
 
   - title: Documentation
     output: web
     folderitems:
+
     - title: News
       url: /news.html
       output: web
+
     - title: Theme instructions
       url: /mydoc_introduction.html
       output: web
+
     - title: Google App Engine
-      url: /mydoc_introduction.html
+      url: /gae_introduction.html
       output: web
-    - title: Go
-      url: /mydoc_introduction.html
+
+    - title: Server
+      url: /server_introduction.html
       output: web
-    - title: Javascript
-      url: /mydoc_introduction.html
+
+    - title: Visualization
+      url: /visualization_introduction.html
       output: web
+
+  - title: Development Strategy
+    output: web
+    folderitems:
+
+    - title: Agile
+      url: /agile_introduction.html
+      output: web
+
+    - title: Clean Architecture
+      url: /clean_introduction.html
+      output: web
+
+    - title: Continous Integration
+      url: /ci_introduction.html
+      output: web
+
+    - title: Testing
+      url: /testing_introduction.html
+      output: web
+
+
 #    - title: Product 1
 #      url: /p1_landing_page.html
 #      output: web
