@@ -7,4 +7,4 @@ deploy:
     branch: gtharris-dev
 before_install:
 - openssl aes-256-cbc -K $encrypted_275841f935d0_key -iv $encrypted_275841f935d0_iv
-  -in ubr-1708-prod.json.enc -out keys/ubr-1708-prod.json -d
+  -in keys/ubr-1708-prod.json.enc -out keys/ubr-1708-prod.json -d
