@@ -1,3 +1,5 @@
 .DS_Store
-keys/*.json
-andrew_test
+_site
+_data
+_includes
+pages

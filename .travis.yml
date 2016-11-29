@@ -1,7 +1,7 @@
 language: go
 deploy:
   provider: gae
-  keyfile: 
+  keyfile:
   project: ubr-1708-prod
   on:
-    branch: master
+    branch: gtharris-dev
