@@ -3,10 +3,6 @@
 # application is mandatory
 # later on the web, we might use some other name
 
-
-# version is mandatory
-version: 1-0
-
 # runtime is mandatory
 runtime: go
 
