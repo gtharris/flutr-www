@@ -40,3 +40,7 @@ img {
   margin-right: auto;
 
 }
+#map {
+  height: 400px;
+  width: 500px;
+}

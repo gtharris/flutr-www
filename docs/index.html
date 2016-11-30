@@ -22,6 +22,8 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
+    <!-- Js Before Page Load -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js'></script>
     <!-- Favicon -->
     <link href="images/ubr/favicon.ico" rel="icon" type="image/x-icon" />
 
@@ -158,8 +160,8 @@
         </div>
 
         <div class="col">
-          <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js'></script>
-          <script src="scripts/d3_demo.js"></script>
+
+          <script src="js/d3_demo.js"></script>
         </div>
 
         <div id="map" class="col">
@@ -639,31 +641,15 @@
 
     <!-- Theme JavaScript -->
     <script src="vendor/js/freelancer.min.js"></script>
+
+    <!-- Custom JS -->
     <script async defer
 		  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFCUvk298LyMesZK5P7dijbxDzavtJcf8&libraries=visualization&callback=initMap">
     </script>
-    <!-- Custom JS -->
-    <script>
-    var map;
-    function initMap() {
-      map = InitNewMap(42.011439, -93.638185, document.getElementById('map'));
-      var sightings = gen_sightings();
-      var breadcrumbs = gen_breadcrumbs();
-      sightings = LoadSightingsFromString(sightings);
-      breadcrumbs = LoadBreadcrumbsFromString(breadcrumbs);
-      (MapSightingsToMapAction(map.map))(sightings);
-      (MapBreadcrumbsToMapAction(map.map))(breadcrumbs);
-    }
-    </script>
-    <style>
-    #map {
-      height: 400px;
-      width: 500px;
-    }
-    </style>
     <!-- Visualization -->
-    <script src="scripts/google_maps_functions.js"></script>
-    <script src="scripts/sample_data.js"></script>
+    <script src="js/google_maps_functions.js"></script>
+    <script src="js/sample_data.js"></script>
+    <script src="js/google_map.js"></script>
 
   </body>
 
