@@ -35,10 +35,15 @@ img {
     margin-right: auto;
 }
 .social_img {
+
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
 
+}
+.gmail_logo {
+  width: 32px;
+  height: 34px;
 }
 #map {
   height: 400px;
