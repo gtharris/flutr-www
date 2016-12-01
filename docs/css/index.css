@@ -40,6 +40,10 @@ img {
   margin-right: auto;
 
 }
+.gmail_img {
+  width: 32px;
+  height: 34px;
+}
 
 #map {
   height: 400px;
