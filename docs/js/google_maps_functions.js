@@ -3,7 +3,7 @@ function InitNewMap(center_lat, center_long, html_map_element)
 {
 	var mapData = {
 		map: new google.maps.Map(html_map_element, {
-			zoom: 50,
+			zoom: 18,
 			center: {lat: center_lat, lng: center_long},
 			mapTypeId: 'satellite'
 		}),
