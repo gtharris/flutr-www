@@ -1,6 +1,6 @@
 var map;
 function initMap() {
-  map = InitNewMap(42.011439, -93.638185, document.getElementById('map'));
+  map = InitNewMap(42.010439, -93.638085, document.getElementById('map'));
   var sightings = gen_sightings();
   var breadcrumbs = gen_breadcrumbs();
   sightings = LoadSightingsFromString(sightings);
