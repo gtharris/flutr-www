@@ -56,7 +56,7 @@
         container: 'map', // container id
         style: 'mapbox://styles/enjalot/cihmvv7kg004v91kn22zjptsc',
         center: [-93.64011143,42.00894887],
-        zoom: 20,
+        zoom: 18,
     })
     map.dragPan.disable();
     map.scrollZoom.disable();
@@ -108,7 +108,7 @@
                     "stroke-width": 1
                 })
                 .transition().duration(1000)
-                .attr("r", 1.5)
+                .attr("r", 4)
 
         circleControl.on("update", function() {
             svg.selectAll("circle.dot").style({
