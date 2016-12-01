@@ -24,6 +24,8 @@
 
     <!-- Js Before Page Load -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js'></script>
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.12.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.12.0/mapbox-gl.css' rel='stylesheet' />
     <!-- Favicon -->
     <link href="images/ubr/favicon.ico" rel="icon" type="image/x-icon" />
 
@@ -157,15 +159,25 @@
 					    On the left is a Google Maps display showing a real survey that was taken in Reiman Gardens.
 					    On the right is [Something that I don't know what it is yet.]
           </p>
-        </div>
+        <!--/div>
+          <div class="row">
+            <div id="divamap" ></div>
+        <div id="map" ></div>
 
-        <div class="col">
+          </div-->
 
-          <!--script src="js/d3_demo.js"></script-->
-        </div>
 
-        <div id="map" class="col">
-        </div>
+          <div class="row" >
+            <div id ="map" class="col-sm-4 portfolio-item">
+            </div>
+
+            <div id="divamap" class="col-sm-4 portfolio-item">
+               <nav><a id="circle" class="active">draw circle</a></nav>
+            </div>
+
+            </div>
+
+
 
         </div>
       </div>
@@ -642,7 +654,8 @@
     <script src="js/google_maps_functions.js"></script>
     <script src="js/sample_data.js"></script>
     <script src="js/google_map.js"></script>
-
+    <script src="js/selector.js"></script>
+    <script src="js/d3map.js"></script>
   </body>
 
 </html>
