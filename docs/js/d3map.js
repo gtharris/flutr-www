@@ -57,7 +57,7 @@ d3.csv("Breadcrumbs.csv", function(err, data) {
             "stroke-width": 1
         })
         .transition().duration(1000)
-        .attr("r", 4)
+        .attr("r", 6)
 
     circleControl.on("update", function() {
         svg.selectAll("circle.dot").style({
