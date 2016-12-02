@@ -178,24 +178,24 @@
 
             </div>
 			
-			Upload Survey Data<input type="file" id="fileLoader" name="files" multiple/>
-			<script>
-				document.getElementById('fileLoader').addEventListener('change', loadFiles, false);
-				function loadFiles(evt) {
-					map = InitNewMap(42.010439, -93.638085, document.getElementById('map'));
-					for(var i = 0; i < evt.target.files.length; i++)
-					{
-						var file = evt.target.files[i];
+			<!-- Upload Survey Data<input type="file" id="fileLoader" name="files" multiple/> -->
+			<!-- <script> -->
+				<!-- document.getElementById('fileLoader').addEventListener('change', loadFiles, false); -->
+				<!-- function loadFiles(evt) { -->
+					<!-- map = InitNewMap(42.010439, -93.638085, document.getElementById('map')); -->
+					<!-- for(var i = 0; i < evt.target.files.length; i++) -->
+					<!-- { -->
+						<!-- var file = evt.target.files[i]; -->
 						
-						if(file && file.name == "breadcrumbs.csv"){
-							LoadBreadcrumbsFromFile(file, MapBreadcrumbsToMapAction(map.map));
-						}
-						if(file && file.name == "sightings.csv"){
-							LoadSightingsFromFile(file, MapSightingsToMapAction(map.map));
-						}
-					}
-				}
-			</script>
+						<!-- if(file && file.name == "breadcrumbs.csv"){ -->
+							<!-- LoadBreadcrumbsFromFile(file, MapBreadcrumbsToMapAction(map.map)); -->
+						<!-- } -->
+						<!-- if(file && file.name == "sightings.csv"){ -->
+							<!-- LoadSightingsFromFile(file, MapSightingsToMapAction(map.map)); -->
+						<!-- } -->
+					<!-- } -->
+				<!-- } -->
+			<!-- </script> -->
         </div>
       </div>
     </section>
