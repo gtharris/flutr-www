@@ -1,8 +1,8 @@
 @media screen and (min-width: 1028px) {
-   div#brand_small { display: none }
+    div#brand_small { display: none }
 }
 @media screen and (max-width: 1028px) {
-   div#brand_large { display: none }
+    div#brand_large { display: none }
 }
 
 .list-group-scroll{
@@ -12,22 +12,22 @@
 
 .h,
 .v {
-  stroke: black;
-  stroke-dasharray: 4 4;
-  stroke-width: 1;
-  stroke-opacity: .5;
+    stroke: black;
+    stroke-dasharray: 4 4;
+    stroke-width: 1;
+    stroke-opacity: .5;
 }
 
 .axis path,
 .axis line {
-  fill: none;
-  stroke: black;
-  shape-rendering: crispEdges;
+    fill: none;
+    stroke: black;
+    shape-rendering: crispEdges;
 }
 
 .axis text {
-  font-family: sans-serif;
-  font-size: 11px;
+    font-family: sans-serif;
+    font-size: 11px;
 }
 img {
     display: block;
@@ -35,19 +35,18 @@ img {
     margin-right: auto;
 }
 .social_img {
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 .gmail_logo {
-  width: 32px;
-  height: 34px;
+    width: 32px;
+    height: 34px;
 }
 
 #map {
-  height: 400px;
-  width: 500px;
+    height: 400px;
+    width: 500px;
 }
-
 
