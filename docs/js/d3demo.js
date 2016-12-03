@@ -37,7 +37,7 @@ svg.selectAll(".v").data(d3.range(1, 5)).enter()
     .attr("y1", margin).attr("y2", width - margin)
     .attr("x1", x).attr("x2", x)
 
-d3.csv("js/dataford3.csv", function(csv) {
+d3.csv("../docs/data/dataford3.csv", function(csv) {
     // we first sort the data
     csv.sort(function(a, b) {
         return b.population - a.population;
