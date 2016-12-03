@@ -20,6 +20,8 @@ topnav_dropdowns:
           url: /visualization_introduction.html
         - title: Google App Engine
           url: /gae_introduction.html
+        - title: Authentication
+          url: /authentication_introduction.html		
     - title: Development Strategy
       folderitems:
           - title: Agile
