@@ -1,6 +1,6 @@
 ---
 title: Introduction
-sidebar: authentication_sidebar
+sidebar: visualization_sidebar
 permalink: authentication_introduction.html
 folder: authentication
 ---
