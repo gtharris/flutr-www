@@ -21,15 +21,3 @@ body {
     font-family: sans-serif;
     font-size: 11px;
 }
-
-@media screen and (min-width: 1028px) {
-    div#brand_small { display: none }
-}
-@media screen and (max-width: 1028px) {
-    div#brand_large { display: none }
-}
-
-.list-group-scroll{
-    max-height: 300px;
-    overflow-y:scroll;
-}
