@@ -27,7 +27,7 @@ entries:
     - title: Visualization
       url: /visualization_introduction.html
       output: web
-	  
+
     - title: Authentication
       url: /authentication_introduction.html
       output: web
