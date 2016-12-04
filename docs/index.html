@@ -175,9 +175,11 @@
 						
 						if(file && file.name.toUpperCase() == "BREADCRUMBS.CSV"){
 							LoadBreadcrumbsFromFile(file, MapBreadcrumbsToMapAction(map.map));
+							LoadBreadcrumbsFromFile(file, ChangeMapCenterByPointsAction(map.map));
 						}
 						if(file && file.name.toUpperCase() == "SIGHTINGS.CSV"){
 							LoadSightingsFromFile(file, MapSightingsToMapAction(map.map));
+							LoadSightingsFromFile(file, ChangeMapCenterByPointsAction(map.map));
 						}
 					}
 				}

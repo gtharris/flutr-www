@@ -193,6 +193,38 @@ function MapBreadcrumbsToMapAction(map)
 	};
 }
 
+function GetCenter(points)
+{
+	var maxLat = -90;
+	var minLat = 90;
+	var maxLng = -180;
+	var minLng = 180;
+	
+	points.forEach(function(point) {
+		if(point.lat > maxLat)
+			maxLat = point.lat;
+		else if(point.lat < minLat)
+			minLat = point.lat;
+		if(point.lng > maxLng)
+			maxLng = point.lng;
+		else if(point.lng < minLng)
+			minLng = point.lng;
+	});
+	return {
+		lat: (maxLat + minLat) / 2,
+		lng: (maxLng + minLng) / 2
+	};
+}
+
+function ChangeMapCenterByPointsAction(map)
+{
+	return function(points)
+	{
+		var center = GetCenter(points);
+		map.setCenter(center);
+	}
+}
+
 function MapSightingsToMapAction(map)
 {
 	return function(sightings){
