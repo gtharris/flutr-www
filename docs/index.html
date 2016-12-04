@@ -159,39 +159,31 @@
 				On the left is a Google Maps display showing a real survey that was taken in Reiman Gardens.
 				On the right is a map with latitude and longitude points recorded during the same survey using d3.js.
 			</p>
-        <!--/div>
-          <div class="row">
-            <div id="divamap" ></div>
-        <div id="map" ></div>
-
-          </div-->
-            <!-- something -->
 
 
           <div class="row">
 		    <div id ="map" class="col-sm-4 portfolio-item">
             </div>
+			Upload Breadcrumbs and Sightings CSVs<input type="file" id="fileLoader" name="files" multiple/>
+			<script>
+				document.getElementById('fileLoader').addEventListener('change', loadFiles, false);
+				function loadFiles(evt) {
+					map = InitNewMap(42.010439, -93.638085, document.getElementById('map'));
+					for(var i = 0; i < evt.target.files.length; i++)
+					{
+						var file = evt.target.files[i];
+						
+						if(file && file.name.toUpperCase() == "BREADCRUMBS.CSV"){
+							LoadBreadcrumbsFromFile(file, MapBreadcrumbsToMapAction(map.map));
+						}
+						if(file && file.name.toUpperCase() == "SIGHTINGS.CSV"){
+							LoadSightingsFromFile(file, MapSightingsToMapAction(map.map));
+						}
+					}
+				}
+			</script>
             <div id="d3demo" class="col-sm-4 portfolio-item"><script src="js/d3demo.js"></script></div>
           </div>
-			
-			<!-- Upload Survey Data<input type="file" id="fileLoader" name="files" multiple/> -->
-			<!-- <script> -->
-				<!-- document.getElementById('fileLoader').addEventListener('change', loadFiles, false); -->
-				<!-- function loadFiles(evt) { -->
-					<!-- map = InitNewMap(42.010439, -93.638085, document.getElementById('map')); -->
-					<!-- for(var i = 0; i < evt.target.files.length; i++) -->
-					<!-- { -->
-						<!-- var file = evt.target.files[i]; -->
-						
-						<!-- if(file && file.name == "breadcrumbs.csv"){ -->
-							<!-- LoadBreadcrumbsFromFile(file, MapBreadcrumbsToMapAction(map.map)); -->
-						<!-- } -->
-						<!-- if(file && file.name == "sightings.csv"){ -->
-							<!-- LoadSightingsFromFile(file, MapSightingsToMapAction(map.map)); -->
-						<!-- } -->
-					<!-- } -->
-				<!-- } -->
-			<!-- </script> -->
         </div>
       </div>
     </section>

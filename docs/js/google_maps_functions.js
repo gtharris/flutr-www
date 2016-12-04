@@ -134,42 +134,23 @@ function LoadSightingsFromString(text)
 //Quotation marks will not be included in the result
 function ParseCSVLine(line)
 {
-	var quoteFlag = false;
-	var commaFlag
-	var values = [];
-	var value = "";
-	var prevChar;
-	for(var j = 0;j < line.length;j++)
-	{
-		commaFlag = true;
-		if(line[j] == '\"' && prevChar != '\'')//start or end of a value
-		{
-			if(quoteFlag)//end of value
-			{
-				values.push(value);
-				value = "";
-				commaFlag = false;
-				quoteFlag = false;
-			}
-			else if(commaFlag)//start of value
-			{
-				quoteFlag = true;
-			}
-		}
-		else if(quoteFlag)//value is already started
-		{
-			value += line[j];
-		}
-		else if(!commaFlag)//value is not started, deal with whitespace
-		{
-			if(line[j] == ',')
-			{
-				commaFlag = true;
-			}
-		}
-		prevChar = line[j];
-	}
-	return values;
+    var re_valid = /^\s*(?:'[^'\\]*(?:\\[\S\s][^'\\]*)*'|"[^"\\]*(?:\\[\S\s][^"\\]*)*"|[^,'"\s\\]*(?:\s+[^,'"\s\\]+)*)\s*(?:,\s*(?:'[^'\\]*(?:\\[\S\s][^'\\]*)*'|"[^"\\]*(?:\\[\S\s][^"\\]*)*"|[^,'"\s\\]*(?:\s+[^,'"\s\\]+)*)\s*)*$/;
+    var re_value = /(?!\s*$)\s*(?:'([^'\\]*(?:\\[\S\s][^'\\]*)*)'|"([^"\\]*(?:\\[\S\s][^"\\]*)*)"|([^,'"\s\\]*(?:\s+[^,'"\s\\]+)*))\s*(?:,|$)/g;
+    // Return NULL if input string is not well formed CSV string.
+    if (!re_valid.test(line)) return null;
+    var a = [];                     // Initialize array to receive values.
+    line.replace(re_value, // "Walk" the string using replace with callback.
+        function(m0, m1, m2, m3) {
+            // Remove backslash from \' in single quoted values.
+            if      (m1 !== undefined) a.push(m1.replace(/\\'/g, "'"));
+            // Remove backslash from \" in double quoted values.
+            else if (m2 !== undefined) a.push(m2.replace(/\\"/g, '"'));
+            else if (m3 !== undefined) a.push(m3);
+            return ''; // Return empty string.
+        });
+    // Handle special case of empty last value.
+    if (/,\s*$/.test(line)) a.push('');
+    return a;
 }
 
 //Generates an action to be passed into LoadBreadcrumbsFromFile.
