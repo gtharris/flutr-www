@@ -1,10 +1,10 @@
-var width = 500,
-    height = 500,
-    margin = 50;
+var w = 500,
+    h = 500,
+    m = 50;
 
-var svg = d3.select("body").append("svg").attr("width", width).attr("height", height);
-var x = d3.scale.linear().domain([0, 5]).range([margin, width - margin]);
-var y = d3.scale.linear().domain([-10, 10]).range([height - margin, margin]);
+var svg = d3.select("#d3demo").append("svg").attr("width", w).attr("height", h);
+var x = d3.scale.linear().domain([0, 5]).range([m, w - m]);
+var y = d3.scale.linear().domain([-10, 10]).range([h - m, m]);
 var r = d3.scale.linear().domain([0, 500]).range([0, 20]);
 var o = d3.scale.linear().domain([10000, 100000]).range([.5, 1]);
 var c = d3.scale.category10().domain(["Africa", "America", "Asia", "Europe", "Oceania"]);
@@ -19,22 +19,22 @@ var yAxis = d3.svg.axis()
 
 svg.append("g")
     .attr("class", "axis")
-    .attr("transform", "translate(0," + (height - margin) + ")")
+    .attr("transform", "translate(0," + (h - m) + ")")
     .call(xAxis);
 
 svg.append("g")
     .attr("class", "axis")
-    .attr("transform", "translate(" + margin + ",0)")
+    .attr("transform", "translate(" + m + ",0)")
     .call(yAxis);
 
 svg.selectAll(".h").data(d3.range(-8, 10, 2)).enter()
     .append("line").classed("h", 1)
-    .attr("x1", margin).attr("x2", height - margin)
+    .attr("x1", m).attr("x2", h - m)
     .attr("y1", y).attr("y2", y)
 
 svg.selectAll(".v").data(d3.range(1, 5)).enter()
     .append("line").classed("v", 1)
-    .attr("y1", margin).attr("y2", width - margin)
+    .attr("y1", m).attr("y2", w - m)
     .attr("x1", x).attr("x2", x)
 
 d3.csv("data/dataford3.csv", function(csv) {

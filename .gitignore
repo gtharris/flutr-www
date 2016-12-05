@@ -2,3 +2,6 @@
 _site
 keys
 .idea
+pkg
+src
+bin

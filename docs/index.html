@@ -119,7 +119,10 @@
             <img src="images/ubr/app_survey.jpeg" style="max-height:400px"></img>
           </div>
 
-          <div class="">
+        </div>
+        <div class="row" >
+          <div class="text-center">
+            <br> &nbsp; </br>
             <p>
               The current Unified Butterfly Recorder application allows even the
               amateur butterfly hunter to go on surveys, and is available for iOS
@@ -132,17 +135,17 @@
             </p>
           </div>
         </div>
-
-        <div class=" text-center">
-          <a href="https://itunes.apple.com/us/app/reiman-gardens-ubr/id1127478512?mt=8" class="btn btn-lg btn-outline-blk">
-            <i class="fa fa-download"></i> Download <i class="fa fa-apple" aria-hidden="true"></i>
-          </a>
-          <a href="https://play.google.com/store/apps/details?id=edu.iastate.ece.butterflies&hl=en&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1" class="btn btn-lg btn-outline-blk">
-            <i class="fa fa-download"></i> Download <i class="fa fa-android" aria-hidden="true"></i>
-          </a>
-
+        <div class="row" >
+          <div class=" text-center">
+            <a href="https://itunes.apple.com/us/app/reiman-gardens-ubr/id1127478512?mt=8" class="btn btn-lg btn-outline-blk">
+              <i class="fa fa-download"></i> Download <i class="fa fa-apple" aria-hidden="true"></i>
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=edu.iastate.ece.butterflies&hl=en&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1" class="btn btn-lg btn-outline-blk">
+              <i class="fa fa-download"></i> Download <i class="fa fa-android" aria-hidden="true"></i>
+            </a>
+          </div>
         </div>
-      <!-- helo -->
+
       <!-- Flutr -->
         <div class="row">
           <div class="col-lg-12 text-center">
@@ -150,43 +153,47 @@
             <h2>Flutr</h2>
             <hr class="leaf-primary">
           </div>
-
-          <div class="">
+        </div>
+        <div class="row" >
+          <div class="text-center">
             <p>
-				Flutr is our companion website for the UBR app.
-				Here users will be able to log in and view their surveys both as raw data and as a multitude of visualization options.
-				Below are two examples of tools we plan to place on Flutr.
-				The first one is a Google Maps display showing a real survey that was taken in Reiman Gardens.
-				After that is a dynamic d3.js chart displaying contents of a csv file.
-			</p>
-
-
-          <div class="row">
-		    <div id ="map" class="col-sm-4 portfolio-item">
-            </div>
-			Upload Breadcrumbs and Sightings CSVs<input type="file" id="fileLoader" name="files" multiple/>
-			<script>
-				document.getElementById('fileLoader').addEventListener('change', loadFiles, false);
-				function loadFiles(evt) {
-					map = InitNewMap(42.010439, -93.638085, document.getElementById('map'));
-					for(var i = 0; i < evt.target.files.length; i++)
-					{
-						var file = evt.target.files[i];
-						
-						if(file && file.name.toUpperCase() == "BREADCRUMBS.CSV"){
-							LoadBreadcrumbsFromFile(file, MapBreadcrumbsToMapAction(map.map));
-							LoadBreadcrumbsFromFile(file, ChangeMapCenterByPointsAction(map.map));
-						}
-						if(file && file.name.toUpperCase() == "SIGHTINGS.CSV"){
-							LoadSightingsFromFile(file, MapSightingsToMapAction(map.map));
-							LoadSightingsFromFile(file, ChangeMapCenterByPointsAction(map.map));
-						}
-					}
-				}
-			</script>
-            <div id="d3demo" class="col-sm-4 portfolio-item"><script src="js/d3demo.js"></script></div>
+				     Flutr is our companion website for the UBR app.
+				     Here users will be able to log in and view their surveys both as raw data and as a multitude of visualization options.
+				     Below are two examples of the visualizations we plan to provide with Flutr.
+				     The first one is a Google Maps display showing a real survey that was taken in Reiman Gardens.
+				     Following is a dynamic d3.js chart displaying contents of a csv file.
+			      </p>
           </div>
         </div>
+        <div class="row" >
+		        <div id ="map" class="col-sm-4 center-block">
+            </div>
+            <div id="d3demo" class="col-sm-4 center-block">
+              <script src="js/d3demo.js"></script>
+            </div>
+        </div>
+        <div class="row">
+        Upload Breadcrumbs and Sightings CSVs<input type="file" id="fileLoader" name="files" multiple/>
+        <script>
+          document.getElementById('fileLoader').addEventListener('change', loadFiles, false);
+          function loadFiles(evt) {
+            map = InitNewMap(42.010439, -93.638085, document.getElementById('map'));
+            for(var i = 0; i < evt.target.files.length; i++)
+            {
+              var file = evt.target.files[i];
+
+              if(file && file.name.toUpperCase() == "BREADCRUMBS.CSV"){
+                LoadBreadcrumbsFromFile(file, MapBreadcrumbsToMapAction(map.map));
+                LoadBreadcrumbsFromFile(file, ChangeMapCenterByPointsAction(map.map));
+              }
+              if(file && file.name.toUpperCase() == "SIGHTINGS.CSV"){
+                LoadSightingsFromFile(file, MapSightingsToMapAction(map.map));
+                LoadSightingsFromFile(file, ChangeMapCenterByPointsAction(map.map));
+              }
+            }
+          }
+        </script>
+      </div>
       </div>
     </section>
 
@@ -460,7 +467,7 @@
             </br>
             <small>Systems Architect</small>
           </h3>
-          <p>Senior in Computer Engineering 
+          <p>Senior in Computer Engineering
 	    </br>Designing maintainable software
 	    </br>Android Lead
 	  </p>
