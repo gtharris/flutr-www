@@ -4,3 +4,5 @@ _data
 _includes
 pages
 keys/*.json
+pkg
+bin

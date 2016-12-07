@@ -22,7 +22,7 @@ type testNum struct {
 	dat int
 }
 
-func main() {
+func fbtestp() {
 	root := firebase.New("https://ubr-testing.firebaseio.com")
 
 	// fmt.Println(root.Get("/users/andrew/survey/crumb0"))
@@ -31,7 +31,7 @@ func main() {
 	_ = err
 	fmt.Println(string(bts))
 
-	// crumbDat := new(crumbs) 
+	// crumbDat := new(crumbs)
 	// json.Unmarshal(bts,crumbDat)
 	// fmt.Println(crumbDat.accuracy, crumbDat.id, crumbDat.lat, crumbDat.lng, crumbDat.speed, crumbDat.surveyID, crumbDat.time_date, crumbDat.time_date)
 }
