@@ -43,7 +43,7 @@ func init() {
 	var err error
 
 	// To use the in-memory test database, uncomment the next line.
-	DB = newMemoryDB()
+  DB = newMemoryDB()
 
 	// [START cloudsql]
 	// To use MySQL, uncomment the following lines, and update the username,
@@ -71,7 +71,7 @@ func init() {
 	// More options can be set, see the google package docs for details:
 	// http://godoc.org/golang.org/x/oauth2/google
 	//
-	// DB, err = configureDatastoreDB("<your-project-id>")
+	 DB, err = configureDatastoreDB("ubr-1708-prod")
 	// [END datastore]
 
 	if err != nil {
