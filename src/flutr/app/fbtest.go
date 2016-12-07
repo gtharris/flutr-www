@@ -25,7 +25,7 @@ type testNum struct {
 func fbtestp() {
 	root := firebase.New("https://ubr-testing.firebaseio.com")
 
-	// fmt.Println(root.Get("/users/andrew/survey/crumb0"))
+	fmt.Println(root.Get("/users/andrew/survey/crumb0"))
 
 	bts, err := root.Get("/users/andrew/survey/crumb0")
 	_ = err
